@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base: '/wicv-notes/',
   title: "wanglongkai's notes",
   description: "Record some messy things",
   themeConfig: {
