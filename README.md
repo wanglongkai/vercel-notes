@@ -1,2 +1,2 @@
-# vercel-notes
-部署到vercel的笔记
+# wicv-notes
+在西部智联期间的笔记
