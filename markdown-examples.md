@@ -1,11 +1,7 @@
-# Markdown Extension Examples
+# Markdown扩展示例
 
-This page demonstrates some of the built-in markdown extensions provided by VitePress.
 
-## Syntax Highlighting
-
-VitePress provides Syntax Highlighting powered by [Shiki](https://github.com/shikijs/shiki), with additional features like line-highlighting:
-
+## 语法高亮
 **Input**
 
 ````
@@ -32,7 +28,7 @@ export default {
 }
 ```
 
-## Custom Containers
+## 自定义容器
 
 **Input**
 
@@ -80,6 +76,35 @@ This is a dangerous warning.
 This is a details block.
 :::
 
-## More
+## 代码组
+**Input**
+````
+::: code-group
+```sh [npm]
+$ npm run docs:dev
+```
 
-Check out the documentation for the [full list of markdown extensions](https://vitepress.dev/guide/markdown).
+```sh [pnpm]
+$ pnpm run docs:dev
+```
+
+```sh [yarn]
+$ yarn docs:dev
+```
+:::
+````
+**Output**
+
+::: code-group
+```sh [npm]
+$ npm run docs:dev
+```
+
+```sh [pnpm]
+$ pnpm run docs:dev
+```
+
+```sh [yarn]
+$ yarn docs:dev
+```
+:::
