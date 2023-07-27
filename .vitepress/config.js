@@ -8,7 +8,7 @@ export default defineConfig({
   
  
   themeConfig: {
-    logo: '/assets/img/test.jpg',
+    logo: '/logo.jpg',
     search: {
       provider: 'local'
     },

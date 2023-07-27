@@ -6,7 +6,7 @@ hero:
   name: "wanglongkai's notes"
   text: "Record some messy"
   tagline: 
-  image: /assets/img/test.jpg
+  image: /logo.jpg
   actions:
     - theme: brand
       text: Get started
