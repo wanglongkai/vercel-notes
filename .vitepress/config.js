@@ -2,11 +2,16 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  
   base: '/wicv-notes/',
   title: "wanglongkai's notes",
   description: "Record some messy things",
+ 
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
+    logo: '/assets/img/test.jpg',
+    search: {
+      provider: 'local'
+    },
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Examples', link: '/markdown-examples' }
@@ -14,10 +19,16 @@ export default defineConfig({
 
     sidebar: [
       {
-        text: 'Examples',
+        text: '示例',
         items: [
           { text: 'Markdown Examples', link: '/markdown-examples' },
           { text: 'Runtime API Examples', link: '/api-examples' }
+        ]
+      },
+      {
+        text: 'dom & css',
+        items: [
+          { text: 'flex布局', link: '/domcss/flex.md' },
         ]
       }
     ],
