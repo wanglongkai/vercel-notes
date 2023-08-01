@@ -38,7 +38,6 @@ export default defineConfig({
         collapsed: false,
         items: [
           { text: 'flex布局', link: '/domcss/flex.md' },
-          { text: '常用命令', link: '/domcss/常用命令.md' },
           { text: '包含块', link: '/domcss/containBlock.md' },
         ]
       },
@@ -47,6 +46,7 @@ export default defineConfig({
         collapsed: false,
         items: [
           { text: 'Git常用命令', link: '/other/git.md' },
+          { text: '命令行常用命令', link: '/other/命令行命令.md' },
         ]
       },
       {
