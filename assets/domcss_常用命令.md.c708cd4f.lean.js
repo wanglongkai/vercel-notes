@@ -1,1 +1,0 @@
-import{_ as s,o as a,c as n,V as l}from"./chunks/framework.edddbb10.js";const h=JSON.parse('{"title":"windows命令","description":"","frontmatter":{},"headers":[],"relativePath":"domcss/常用命令.md","filePath":"domcss/常用命令.md"}'),e={name:"domcss/常用命令.md"},o=l("",25),p=[o];function t(c,r,i,y,C,d){return a(),n("div",null,p)}const D=s(e,[["render",t]]);export{h as __pageData,D as default};
