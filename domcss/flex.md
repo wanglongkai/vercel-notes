@@ -33,6 +33,7 @@
 
 <br/>
 
+### flex-direction
 - **`flex-direction`:决定主轴的方向（即项目排列的方向）。常用**
   
   ```css
@@ -50,6 +51,7 @@
   
   <br/> <br/>
 
+### flex-wrap
 - **`flex-wrap`:默认情况下，项目都排在一条轴线上。该属性定义一条轴线排不下时，如何换行。**
   
   ```css
@@ -66,6 +68,7 @@
   ![flex-wrap](../assets/img/flex-wrap.jpg)
   <br/> <br/>
 
+### justify-content
 - **`justify-content`：定义项目在主轴上的对齐方式。常用**
   
   ```css
@@ -84,6 +87,7 @@
   ![justify-content](../assets/img/flex-justify-content.jpg)
   <br/> <br/>
 
+### align-items
 - **`align-items`:定义项目在交叉轴上的对齐方式。**
   
   ```css
@@ -103,6 +107,7 @@
 
 <br/> <br/>
 
+### align-content
 - **`align-content`:属性定义了多根轴线的对齐方式。如果项目只有一根轴线，该属性不起作用。**
   
   ```css
@@ -137,22 +142,26 @@
 
 <br/>
 
+### flex-grow
+`flex-grow`属性定义项目的放大比例，默认为`0`，即如果存在剩余空间，也不放大。
+    
+  ![flex-grow](../assets/img/flex-grow.jpg)
+
+### flex-shrink
+`flex-shrink`属性定义了项目的缩小比例，默认为1，即如果空间不足，该项目将缩小。
+  
+  ![flex-shrink](../assets/img/flex-shrink.jpg)
+
+### flex-basis
+ `flex-basis`属性定义了在分配多余空间之前，项目占据的主轴空间。
+- 浏览器根据这个属性，计算主轴是否有多余空间。它的默认值为`auto`，即项目的本来大小。
+
+### flex
 - **`flex`:`flex-grow`、`flex-shrink`、`flex-basis`的简写形式，默认值为`0 1 auto`。**
-  
-  - `flex-grow`属性定义项目的放大比例，默认为`0`，即如果存在剩余空间，也不放大。
-    
-    ![flex-grow](../assets/img/flex-grow.jpg)
-  
-  - `flex-shrink`属性定义了项目的缩小比例，默认为1，即如果空间不足，该项目将缩小。
-    
-    ![flex-shrink](../assets/img/flex-shrink.jpg)
-  
-  - `flex-basis`属性定义了在分配多余空间之前，项目占据的主轴空间。
-    
-    - 浏览器根据这个属性，计算主轴是否有多余空间。它的默认值为`auto`，即项目的本来大小。
 
 <br/>
 
+### align-self
 - **`align-self`:该属性允许单个项目在交叉轴上有不一样的对齐方式，可覆盖`align-items`的属性。**
   
   ```css

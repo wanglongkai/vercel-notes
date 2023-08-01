@@ -42,6 +42,13 @@ export default defineConfig({
         ]
       },
       {
+        text: '其他',
+        collapsed: false,
+        items: [
+          { text: 'Git常用命令', link: '/other/git.md' },
+        ]
+      },
+      {
         text: 'bug-fix',
         link: '/bug/bug.md'
       },
