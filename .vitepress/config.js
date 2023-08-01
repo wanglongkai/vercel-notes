@@ -39,6 +39,7 @@ export default defineConfig({
         items: [
           { text: 'flex布局', link: '/domcss/flex.md' },
           { text: '常用命令', link: '/domcss/常用命令.md' },
+          { text: '包含块', link: '/domcss/containBlock.md' },
         ]
       },
       {
