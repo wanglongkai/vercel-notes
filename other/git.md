@@ -9,16 +9,12 @@
    1. 关联远程库： `git remote add origin git@server-name:path/repo-name.git`
    2. 推送本地仓库内容 ：`git push -u origin master`  
 
-
-
 ## 基本使用
 
 1. 工作目录--->暂存区 ：`git add .`
 2. 暂存区 --->本地仓库 ： `git commit -m "some commit info"`
 3. 拉取远程: `git pull origin 分支名`
 4. 本地仓库--->远程仓库 ： `git push origin 分支名`
-
-
 
 **注意事项：**
 
@@ -27,7 +23,16 @@
 3. 然后再次提交(add和commit)
 4. 最后push(如果push到master分支，可以简写为`git push`)  
 
+## 拉取所有远程分支
 
+需要在gitbash中运行
+
+```shell
+git clone xxx
+git branch -r | grep -v '\->' | while read remote; do git branch --track "${remote#origin/}" "$remote"; done
+git fetch --all
+git pull --all
+```
 
 ## git pull命令
 
@@ -35,15 +40,11 @@
 **完整语法**：git pull 远程主机名 远程分支名:本地分支名  
 **举例**：`git pull origin wlk:main`      取回远程origin主机的wlk分支与本地的main分支合并。  
 
- 
-
 ## 暂存区回退到工作区
 
 - `git reset HEAD <file>` 将file从暂存区回退到工作空间  
 
 - `git reset` 简写，回滚暂存区的所有添加  
-
-
 
 ## 取消本次修改
 
@@ -51,13 +52,9 @@
 
 `git checkout -- <file>` 将工作空间的还没有add的修改取消掉  
 
-
-
 ## 覆盖上次的commit
 
 `git commit --amend -m "message"` 覆盖掉上一次的commit信息  
-
-
 
 ## 回退到指定版本
 
@@ -70,8 +67,6 @@
   1.版本回退时，若工作区和暂存区有未提交的修改，会被撤销掉。这点要**特别注意**  
   2.若回退后，再想恢复，可用 `git reflog` 查看历史命令，找到相关commit-id，再次reset。  
 
-
-
 ## 分支操作
 
 1. 创建分支 ： `git branch 分支名`
@@ -83,8 +78,6 @@
 7. 删除远程分支 ： `git push origin -d 分支名`
 8. 拉取远程分支(本地不存在的分支) : `git checkout -b 本地分支名 origin/远程分支名`
 9. push本地存在而远程不存在的分支时，远程会自动创建分支: `git push origin 分支名`
-
-
 
 ## git rebase 命令
 
@@ -103,22 +96,16 @@
    > 前提：`当前分支`是从`其他分支`拉取的子分支  
    > `当前分支`的提交拼接到`其他分支`的最新提交之后
 
-
-
 ## git cherry-pick 命令
 
 1. **git cherry-pick commitID**
    
    > 将其他分支的commitID应用到当前分支
 
-
-
 ## commitID拉取分支
 
 1. 从指定提交拉取分支：**git branch 分支名 commitID**
 2. 从指定提交拉取分支并切换： **git checkout -b 分支名 commitID**
-
-
 
 ## git stash 命令
 
@@ -129,8 +116,6 @@
 5. **git stash pop**：命令恢复之前缓存的工作目录，将缓存堆栈中的对应stash删除，并将对应修改应用到当前的工作目录下，默认为第一个stash,即stash@{0}，如果要应用并删除其他stash存储，命令：**git stash pop stash@{$num}**。
 6. **git stash drop stash@{$num}**：删除stash@{$num}存储。
 7. **git stash clear**：删除所有缓存的stash存储。 新增的文件，直接执行stash是不会被存储的。需要先用git add命令将其添加到git暂存区，才可以被git stash保存。
-
-
 
 ## 合并冲突
 
@@ -146,8 +131,6 @@
 
 2. 远程删除了某文件，本地修改了该文件，导致本地修改的文件与不存在的文件冲突；解决办法是：1-删除该文件再提交；2-直接提交（需要再次add和commit）
 
-
-
 ## 标签操作
 
 1. 切换到目标分支上
@@ -159,10 +142,6 @@
 命令 `git push origin --tags` 可以推送全部未推送过的本地标签；  
 命令 `git tag -d 标签名` 可以删除一个本地标签；  
 命令 `git push origin :refs/tags/标签名` 可以删除一个远程标签。  
-
-
-
-
 
 ## 强制获取远程最新版本
 

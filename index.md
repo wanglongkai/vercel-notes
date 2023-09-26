@@ -10,10 +10,10 @@ hero:
   actions:
     - theme: brand
       text: Get started
-      link: /markdown-examples
+      link: /domcss/flex
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: BugFix
+      link: /bug/bug
 
 features:
   - title: Feature A
