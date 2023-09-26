@@ -5,7 +5,7 @@ export default defineConfig({
   base: '/wicv-notes/',
   title: "wanglongkai's notes",
   description: "Record some messy things",
-  
+  ignoreDeadLinks: true,
  
   themeConfig: {
     logo: '/logo.jpg',
@@ -92,7 +92,6 @@ export default defineConfig({
           { text: '服务器环境初始化', link: '/other/server-init.md' },
           { text: '正则表达式', link: '/other/regexp.md' },
           { text: '重装系统', link: '/other/reSystem.md' },
-          { text: 'vuepress_use', link: '/other/vuepress_use.md' },
         ]
       },
       {
