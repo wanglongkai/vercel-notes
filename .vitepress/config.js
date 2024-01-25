@@ -27,7 +27,7 @@ export default defineConfig({
     sidebar: [
       {
         text: 'dom & css',
-        collapsed: false,
+        collapsed: true,
         items: [
           { text: 'flex布局', link: '/domcss/flex.md' },
           { text: '包含块', link: '/domcss/containBlock.md' },
@@ -43,7 +43,7 @@ export default defineConfig({
       },
       {
         text: 'ECMAScript',
-        collapsed: false,
+        collapsed: true,
         items: [
           { text: '箭头函数', link: '/ECMAScript/arrowfunction.md' },
           { text: 'async await', link: '/ECMAScript/async_await.md' },
@@ -63,7 +63,7 @@ export default defineConfig({
       },
       {
         text: 'React',
-        collapsed: false,
+        collapsed: true,
         items: [
           { text: 'Context', link: '/react/Context.md' },
           { text: 'Lazy&Suspense', link: '/react/Lazy&Suspense.md' },
@@ -73,7 +73,7 @@ export default defineConfig({
       },
       {
         text: 'Vue',
-        collapsed: false,
+        collapsed: true,
         items: [
           { text: 'Vuex', link: '/vue/vuex.md' },
           { text: 'Vue_mockjs', link: '/vue/vue_mockjs.md' },
@@ -82,7 +82,7 @@ export default defineConfig({
       },
       {
         text: '其他',
-        collapsed: false,
+        collapsed: true,
         items: [
           { text: 'Git常用命令', link: '/other/git.md' },
           { text: '命令行常用命令', link: '/other/命令行命令.md' },
@@ -96,8 +96,9 @@ export default defineConfig({
       },
       {
         text: '面试',
-        collapsed: false,
+        collapsed: true,
         items: [
+          { text: '手写题', link: '/daily/手写题.md' },
           { text: 'leetCode刷题', link: '/daily/leetcode.md' },
           { text: '一道面试题', link: '/daily/question1.md' },
         ]
