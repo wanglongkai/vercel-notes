@@ -95,9 +95,10 @@ export default defineConfig({
         ]
       },
       {
-        text: 'daily',
+        text: '面试',
         collapsed: false,
         items: [
+          { text: 'leetCode刷题', link: '/daily/leetcode.md' },
           { text: '一道面试题', link: '/daily/question1.md' },
         ]
       },
