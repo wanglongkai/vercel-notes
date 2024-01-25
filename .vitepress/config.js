@@ -99,6 +99,7 @@ export default defineConfig({
         collapsed: true,
         items: [
           { text: '手写题', link: '/daily/手写题.md' },
+          { text: '理论题', link: '/daily/理论题.md' },
           { text: 'leetCode刷题', link: '/daily/leetcode.md' },
           { text: '一道面试题', link: '/daily/question1.md' },
         ]
